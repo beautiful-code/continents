@@ -1,6 +1,6 @@
 = continents
 
-Description goes here.
+Mapping from Continents to Countries and viceversa.
 
 == Note on Patches/Pull Requests
  
