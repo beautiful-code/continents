@@ -2,7 +2,7 @@ require 'yaml'
 
 module Ravibhim
   module Continents
-    CONTINENTS = ['Asia', 'Australia']
+    CONTINENTS = ['Asia', 'Australia', 'Europe', 'Africa', 'North America', 'South America']
 
     # Load countries from yaml files.
     # and build up country to continent mapping

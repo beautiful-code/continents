@@ -18,10 +18,42 @@ describe "Continents" do
     end
   end
 
+  describe "Africa Countries" do
+    ['South Africa', 'Egypt'].each do |c|
+      it "has #{c} in Africa countries" do
+        Ravibhim::Continents::AFRICA_COUNTRIES.should include(c)
+      end
+    end
+  end
+
   describe "Australia Countries" do
     ['Australia', 'New Zealand'].each do |c|
-      it "has #{c} in Asian countries" do
+      it "has #{c} in Australian countries" do
         Ravibhim::Continents::AUSTRALIA_COUNTRIES.should include(c)
+      end
+    end
+  end
+
+  describe "Europe Countries" do
+    ['United Kingdom', 'Germany'].each do |c|
+      it "has #{c} in European countries" do
+        Ravibhim::Continents::EUROPE_COUNTRIES.should include(c)
+      end
+    end
+  end
+
+  describe "North America Countries" do
+    ['United States of America', 'Canada'].each do |c|
+      it "has #{c} in North America countries" do
+        Ravibhim::Continents::NORTH_AMERICA_COUNTRIES.should include(c)
+      end
+    end
+  end
+
+  describe "South America Countries" do
+    ['Brazil', 'Argentina'].each do |c|
+      it "has #{c} in South America countries" do
+        Ravibhim::Continents::SOUTH_AMERICA_COUNTRIES.should include(c)
       end
     end
   end
