@@ -19,6 +19,7 @@ module Ravibhim
       const_set("#{cont_const_name}_COUNTRIES", countries)
     end
 
+    COUNTRIES = COUNTRY_TO_CONTINENT.keys.sort
 
     def self.get_continent(country)
       COUNTRY_TO_CONTINENT[country]

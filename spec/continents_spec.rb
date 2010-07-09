@@ -58,6 +58,14 @@ describe "Continents" do
     end
   end
 
+  describe "COUNTRIES" do
+    it 'gets set to the list of countries' do
+      ['India', 'Australia', 'United States of America', 'France', 'Argentina', 'Nigeria' ].each do |c|
+        Ravibhim::Continents::COUNTRIES.should include(c)
+      end
+    end
+  end
+
   describe :get_country do
     it 'returns the continent given the country' do
       Ravibhim::Continents::get_continent('India').should == 'Asia'
