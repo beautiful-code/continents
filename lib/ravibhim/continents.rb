@@ -24,5 +24,10 @@ module Ravibhim
     def self.get_continent(country)
       COUNTRY_TO_CONTINENT[country]
     end
+
+    def self.get_countries(cont)
+      cont_const_name = cont.upcase.gsub(' ','_')
+      const_get("#{cont_const_name}_COUNTRIES")
+    end
   end
 end

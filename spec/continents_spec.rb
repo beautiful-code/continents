@@ -76,4 +76,14 @@ describe "Continents" do
     end
   end
 
+  describe :get_countries do
+    it 'returns the countries in a continent' do
+      Ravibhim::Continents::get_countries('Asia').should include('India')
+      Ravibhim::Continents::get_countries('Asia').should include('Sri Lanka')
+
+      Ravibhim::Continents::get_countries('North America').should include('United States of America')
+      Ravibhim::Continents::get_countries('Europe').should include('Germany')
+    end
+  end
+
 end
