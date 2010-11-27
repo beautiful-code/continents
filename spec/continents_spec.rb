@@ -86,4 +86,14 @@ describe "Continents" do
     end
   end
 
+  describe :get_iso_3166_1_code do
+    it 'returns the code of the country if present' do
+      Ravibhim::Continents::get_iso_3166_1_code('Afghanistan').should == 'AF'
+    end
+
+    it 'returns an empty string if the code is not present' do
+      Ravibhim::Continents::get_iso_3166_1_code('Kuwait').should be_nil
+    end
+  end
+
 end
